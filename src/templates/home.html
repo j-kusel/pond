@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html ng-app="laboratory">
+    <head>
+        <script src='/dist/vendor.bundle.js'></script>
+        <script src='/dist/app.bundle.js'></script>
+        <title>lab</title>
+    </head>
+    <body ng-controller="NavController">
+        <bloc></bloc>
+        <headbar class="l-head" title="title"></headbar>
+        <div class="l-nav">
+            <navbar links="navlinks"></navbar>
+        </div>
+        <div class="column-side">
+            <p>test spacer</p>
+        </div>
+        <feed class="column-mid">
+            <p>hello hello hello</p>
+            <post ng-repeat="post in fakeposts" post="post">
+            </post>
+        </feed>
+    </body>
+</html>

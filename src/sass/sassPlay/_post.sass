@@ -1,0 +1,24 @@
+
+
+.post
+  border: 2px dotted green
+  margin: 5px
+  background-color: transparent
+  @include transition(background-color 1s)
+
+  &:hover
+    background-color: green
+    @include transition(background-color .2s)
+
+
+.post-title
+  margin: 0px
+  font-family: 'Orkney'
+  color: orange
+  padding: 3px
+
+.post-content
+  margin: 0px
+  color: black
+  padding: 3px
+
