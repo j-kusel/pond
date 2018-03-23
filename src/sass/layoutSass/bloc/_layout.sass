@@ -1,12 +1,32 @@
-
-
 .bloc
+  position: relative
+  display: inline-block
+  margin: 10px
   background-color: $secondary
-  color: $primary
-  @include transition(background-color, 1s, 5s)
-  &:hover
+  &:hover %bloc-text
     background-color: $primary
     color: $secondary
+  border: 1px solid $primary
+  @include shadow(5px, 5px, $shadows)
+  max-width: 300px
 
+%bloc-text
+
+  color: $primary
+  background-color: $secondary
+
+  @include transition(color, 1s, .5s)
+
+  margin: 0px
+  padding: 8px
+
+
+.bloc-title
+  @extend %bloc-text
+  font-size: 1.5em
+
+.bloc-main
+  @extend %bloc-text
+  padding-top: 0px
+ 
   
-

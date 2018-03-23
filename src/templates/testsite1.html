@@ -6,7 +6,7 @@
         <script src='/dist/app.bundle.js'></script>
         <title>testsite1</title>
     </head>
-    <body ng-controller="NavController">
-        <bloc></bloc>
+    <body ng-controller="LayoutController">
+        <bloc ng-repeat="bloc in blocs"></bloc>
     </body>
 </html>
