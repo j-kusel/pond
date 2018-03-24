@@ -10,3 +10,7 @@ angular.module('laboratory', [
         layoutSass,
         sassPlay
     ]);
+
+angular.module('layout', [
+        layoutSass
+    ]);

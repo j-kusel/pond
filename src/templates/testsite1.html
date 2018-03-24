@@ -7,6 +7,12 @@
         <title>testsite1</title>
     </head>
     <body ng-controller="LayoutController">
-        <bloc ng-repeat="bloc in blocs"></bloc>
+        <identity logo="https://st3.depositphotos.com/1688079/13153/i/1600/depositphotos_131533928-stock-photo-save-floppy-disk-icon-white.jpg" title="{{ identity.title }}">
+            <div class="identity-content">
+                <searchbar search="identity.search" submit="identity.submit(query)"></searchbar>
+            </div>
+        </identity>
+        <searchbar search="identity.filter"></searchbar>
+        <bloc ng-repeat="bloc in blocs | filter:identity.filter track by bloc.tags"></bloc>
     </body>
 </html>

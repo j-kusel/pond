@@ -1,4 +1,4 @@
-const tpl = require('../../../templates/sassLayout/bloc.tpl.html');
+const tpl = require('../../../templates/layoutSass/bloc.tpl.html');
 
 
 function bloc() {
