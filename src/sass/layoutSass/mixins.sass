@@ -1,8 +1,11 @@
-@mixin transition($property, $duration, $delay)
-  -moz-transition: $property, $duration, $delay
-  -o-transition: $property, $duration, $delay
-  -webkit-transition: $property, $duration, $delay
-  transition: $property, $duration, $delay
+@mixin transition($transitions...)
+  -moz-transition: $transitions
+  -o-transition: $transitions
+  -webkit-transition: $transitions
+  transition: $transitions
+@mixin shadow($param...)
+  -webkit-box-shadow: $param
+  -moz-box-shadow: $param
+  box-shadow: $param
 
-@mixin shadow($x, $y, $color: $shadows)
-  box-shadow: $x $y $color
+

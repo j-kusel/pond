@@ -1,21 +1,30 @@
 .bloc
   position: relative
   display: inline-block
+  vertical-align: top
   margin: 10px
   background-color: $secondary
-  &:hover %bloc-text
+  @include transition(color 1s .5s)
+
+  &:hover
     background-color: $primary
     color: $secondary
+
+    %bloc-text
+      color: $secondary
+
   border: 1px solid $primary
-  @include shadow(5px, 5px, $shadows)
+  @include shadow(5px 5px $shadows)
+
+  height: 175px
   max-width: 300px
 
 %bloc-text
 
   color: $primary
-  background-color: $secondary
+  font-family: 'Orkney'
 
-  @include transition(color, 1s, .5s)
+  @include transition(color .25s)
 
   margin: 0px
   padding: 8px

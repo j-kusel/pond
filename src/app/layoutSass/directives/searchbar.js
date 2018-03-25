@@ -5,12 +5,13 @@ function searchbar() {
         restrict: 'E',
         scope: {
             search: '=',
-            submit: '&'
+            submit: '&',
+            prompt: '@',
+            button: '@'
         },
         replace: true,
         template: tpl,
         link: (scope, elem, attr) => {
-            scope.submit();
         }
     };
 }

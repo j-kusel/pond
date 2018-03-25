@@ -20,12 +20,47 @@ var layoutctrl = ($scope) => {
 
     $scope.identity = {
         title: "big title",
-        search: "enter search here",
+        search: '',
+        prompt: 'enter search here',
+        button: 'search!',
         filter: '',
         submit: function(query) {
             console.log(query);
         }
     };
+
+    $scope.tags = {
+        prompt: 'find tags',
+        filter: ''
+    }
+
+    $scope.links = [
+        {
+            name: 'home',
+            url: '/'
+        },
+        {
+            name: 'blog',
+            url: '/blog'
+        },
+        {
+            name: 'home',
+            url: '/'
+        },
+        {
+            name: 'blog',
+            url: '/blog'
+        },
+        {
+            name: 'home',
+            url: '/'
+        },
+        {
+            name: 'blog',
+            url: '/blog'
+        }
+
+    ];
 
 }
 

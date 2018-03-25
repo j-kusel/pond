@@ -1,0 +1,33 @@
+.searchbar
+  padding: 5px
+  display: inline-block
+  float: right
+
+.searchbar-entry
+  display: inline
+  vertical-align: middle
+  padding: 6px 4px 4px 4px
+  font-family: 'Orkney'
+  font-size: .75em
+  border: none
+  outline: 1px solid $shadows
+  @include shadow(2px, 2px, $shadows)
+
+  &:focus
+    outline: 1px solid $primary
+    outline-offset: 0px
+ 
+
+.searchbar-button
+  display: inline
+  padding: 6px 4px 4px 4px
+  font-family: 'Orkney'
+  font-size: .75em
+  vertical-align: middle
+  border: none
+
+  &:active
+    background-color: $primary
+    color: $secondary
+    border: none
+

@@ -1,6 +1,4 @@
 <div class="searchbar">
-    <form>
-        <input type="text" ng-model="search"></input>
-        <button type="button" ng-click="submit({query: search})">search</button>
-    </form>
+    <input class="searchbar-entry" type="text" ng-model="search" placeholder="{{ prompt || 'bad prompt' }}">
+    <button ng-if="button" class="searchbar-button" type="button" ng-click="submit({query: search})">{{ button || 'search' }}</button>
 </div>

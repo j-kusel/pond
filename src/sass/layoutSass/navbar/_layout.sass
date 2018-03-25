@@ -1,0 +1,31 @@
+#navbar
+  position: relative
+  display: inline-block
+  float: right
+  clear: right
+  width: 800px
+
+  margin: 5px 0px
+  list-style: none
+
+.navbar-link
+  display: inline-block
+  float: right
+  width: 100px
+  margin: 5px
+  border: 1px solid transparent
+  text-align: center
+  @include transition(transform .2s 0s)
+  //@include debug()
+
+  &:hover
+    @include shadow(2px 2px $shadows)
+    border-color: $shadows
+    transform: translate(-2px, -2px)
+
+.navbar-a
+  text-decoration: none
+  font-family: 'Orkney'
+  font-size: .75em
+  padding: 8px 0px 6px 0px
+
